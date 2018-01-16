@@ -1,0 +1,17 @@
+{
+  "name": "sdg-project",
+  "version": "1.0.0",
+  "description": "Server_Sign-speaks_project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yazeen Thariq",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.12",
+    "mongoose": "^4.13.9"
+  }
+}
