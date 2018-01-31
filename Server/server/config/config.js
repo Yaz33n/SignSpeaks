@@ -3,8 +3,6 @@
 /**
  * Author : Yazeen Thariq
  * Created : 1/13/2018
- * 
- * ------------------ DATABASE CONFIG ------------------
  */
 const _username = 'yazeen';
 const _password = 'jWrPeCoA1ZRzcsBB';
