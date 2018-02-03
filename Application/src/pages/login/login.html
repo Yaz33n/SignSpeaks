@@ -1,0 +1,29 @@
+<ion-content  padding class="background">
+  <div>
+      <div text-center class="logoWhiteContainer">
+         <img  src="assets/imgs/whitelogo.png">
+      </div>
+    <ion-list text-center>
+        <ion-item class="ionItemLogin">
+          <ion-input type="text" placeholder="Email"></ion-input>
+        </ion-item>
+        <ion-item class="ionItemLogin">
+          <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+    </ion-list> 
+    <div text-center>
+      <button ion-button icon-left color="blueDark"  (click)='goToHomePage()'>
+        <ion-icon name="key" ></ion-icon>Login     
+      </button>
+      <br>
+      <br>
+      <a href="#" color="light" >Forgot password?</a>
+      
+    </div>
+  </div>
+</ion-content>
+<ion-footer class="footer">
+  <div text-center>
+    <a color="light" (click)='goToRegisterPage()'>New to Sign Speaks? <b>Create an account</b></a>
+  </div>
+</ion-footer>

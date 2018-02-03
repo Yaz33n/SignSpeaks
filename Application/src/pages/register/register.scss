@@ -1,0 +1,41 @@
+page-register {
+    .background{
+       background-image: url("../assets/imgs/bgRegister.png");
+        // position: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .footer{
+        background-color:#001651;
+        padding: 30px;
+        color: white;
+    }
+    img{
+        margin: auto;
+    }
+
+    .logoWhiteContainer{  
+        padding: 70px 1px 40px 1px;
+        margin: 30px 0px -20px 0px;
+        background-image: url("../assets/imgs/handImage.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .ionItemLogin{
+        margin: auto;
+        margin-bottom: 20px;
+        width: 80%;
+      
+    }
+    a{
+        color: white;
+        text-decoration-line: none;
+    }
+    .whiteText{
+        color: white;
+        text-align: center;
+    }
+    
+}

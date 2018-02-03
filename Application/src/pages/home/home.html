@@ -1,0 +1,56 @@
+<ion-header >
+  <ion-navbar >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Device Info</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content  text-center>
+  <div class="gloveImgContainer">
+    <img  src="assets/imgs/glove.png" class="gloveImg">
+    <p > Device Status :
+      <b [hidden]='!connectionStatus' class="greenClass"> CONNECTED</b> 
+      <b [hidden]='connectionStatus' class="redClass"> DISCONNECTED</b> 
+    </p>
+  </div>
+
+
+  <ion-list padding >
+    <div [hidden]='connectionStatus' >
+        <p>Press the scan button to find available gloves </p>
+        <button ion-button color="secondary"  (click)="startScanning()">scan</button>
+    </div>
+    
+    <button ion-button color="danger" [hidden]='!connectionStatus' (click)="disconnect()">Disconnect</button>
+    <ion-list-header>
+      availlable Devices
+    </ion-list-header>
+    <ion-item *ngFor='let device of unpairedDevices'>
+      <span (click)="selectDevice(device.address)" text-center>
+        {{device.name}}
+      </span>
+    </ion-item>
+    <ion-spinner name="crescent" *ngIf="gettingDevices"></ion-spinner>
+  </ion-list>
+  
+  <ion-footer>
+      <button ion-button color="secondary" padding [hidden]='!connectionStatus' (click)="goToConvertorPage()">Open Sign Speak Convertor</button>      
+  </ion-footer>
+  
+  <!-- testing buttons -->
+  <!-- <button ion-button (click)="sendDataToBluetooth()"> Send Data </button>
+  <button ion-button (click)="readDataToBluetooth()"> Read Data </button>
+  <button ion-button (click)="readDataToBluetooth()"> Read Data </button>
+  <button ion-button (click)="setTrueValConnectStatus()">Set true </button>
+  <button ion-button (click)="setFalseValConnectStatus()">Set False </button> -->
+  <!-- testing buttons -->
+
+</ion-content>
+
+
+
+
+
+<!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->

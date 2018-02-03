@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>convertor</ion-title>
+  </ion-navbar>
+</ion-header> 
+
+<ion-content  text-center>
+    <div class="gloveImgContainer">
+        <!-- <img  src="assets/imgs/convertPageImg.png" class="gloveImg"> -->
+        <p >Make a sign to convert to text/speech</p>
+    </div>
+    <p > 
+        Device Status :
+        <b [hidden]='!connectionStatus' class="greenClass"> CONNECTED</b> 
+        <b [hidden]='connectionStatus' class="redClass"> DISCONNECTED</b> 
+    </p>
+
+    <!-- this div section will appear if the device is NOT connected to the glove -->
+    <!-- <div [hidden]='connectionStatus'> -->
+    <div [hidden]='true'>
+        <ion-card>      
+           <ion-card-content>  
+            You can not use the <b>sign to text or speech </b>convertor 
+            when device is not connected!
+            <hr>
+            <button ion-button icon-left color='danger' (click)='goToDeviceInfoPage()'>
+                <ion-icon name="arrow-back"></ion-icon>
+                Go back to Device Info 
+            </button>
+            </ion-card-content>                
+        </ion-card>      
+    </div>
+
+    <!-- this div section  will appear only if the decive is connected to the glove -->
+    <div>
+        <!-- <div [hidden]='!connectionStatus'> -->
+        <div [hidden]='false'>
+            <ion-card>      
+                <ion-card-header>
+                You:
+                <hr>
+                <ion-item>
+                        <ion-label>Enable speech output</ion-label>
+                        <ion-toggle [(ngModel)]="enableSpeech"></ion-toggle>
+                </ion-item>
+                <hr>
+                </ion-card-header>      
+                <ion-card-content>  
+
+                    <!-- <p>
+                        Sign to text coverted text will appear here
+                    <p> -->
+                    <ion-textarea [(ngModel)]="msgFromGlove" class="textAreaMsgFromGlove" disabled='true'></ion-textarea>
+                    <button ion-button color="secondary" (click)='readDataFromBluetooth()'>Get Data test</button>
+                    
+                    <button ion-button color="danger" (click)='testAudio()'>Record audio</button>
+                </ion-card-content>                
+            </ion-card>
+        </div>    
+        <ion-card>      
+            <ion-card-header>
+                Partner:
+                <hr>
+            </ion-card-header>
+            <ion-card-content>  
+                <p>
+                    Speech to text coverted text will appear here
+                <p>
+                <hr>
+                <div >
+                    <button ion-button outline icon-only >
+                        <ion-icon name="mic"></ion-icon>
+                    </button>
+                </div>
+                <p>
+                    <small>Click on the mic to convert speech to text</small>
+                <p>
+            </ion-card-content>           
+        </ion-card>
+    </div>   
+</ion-content>
+
+
+    
+<!-- 
+<button ion-button (click)="sendDataToBluetooth()"> Test Send Data </button>
+<button ion-button (click)="readDataToBluetooth()"> Test Read Data </button>
+<p> Normal = {{dataString}}</p> -->

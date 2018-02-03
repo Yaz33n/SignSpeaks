@@ -1,0 +1,37 @@
+page-login {
+    .background{
+        background-color: #02A5E9;
+        position: fixed;
+    }
+
+    a{
+        color: white;
+        text-decoration-line: none;
+    }
+    
+    .footer{
+        background-color:#001651;
+        padding: 30px;
+        color: white;
+    }
+    img{
+        margin: auto;
+    }
+
+    .logoWhiteContainer{  
+        padding: 80px 1px 40px 1px;
+        margin: 100px 0px -20px 0px;
+        background-image: url("../assets/imgs/handImage.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .ionItemLogin{
+        margin: auto;
+        margin-bottom: 10px;
+        width: 80%;
+      
+    }
+   
+    
+}

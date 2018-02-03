@@ -1,0 +1,19 @@
+#Sat Feb 03 15:50:59 IST 2018
+renamed.5=classes6.dex
+renamed.4=classes5.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.5=/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1155
+base.4=/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1157
+base.3=/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1152
+base.2=/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1153
+base.1=/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1154
+base.0=/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1156
+file.5=/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1155/classes.dex
+file.4=/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1157/classes.dex
+file.3=/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1152/classes.dex
+file.2=/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1153/classes.dex
+file.1=/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1154/classes.dex
+file.0=/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1156/classes.dex
