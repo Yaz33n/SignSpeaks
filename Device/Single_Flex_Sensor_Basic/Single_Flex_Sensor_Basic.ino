@@ -14,7 +14,11 @@ voltage at A0 should decrease.
 Development environment specifics:
 Arduino 1.6.7
 ******************************************************************************/
-const int FLEX_PIN = A0;
+const int FLEX_PIN1 = A0;
+const int FLEX_PIN2 = A1;
+const int FLEX_PIN3 = A2;
+const int FLEX_PIN4 = A3;
+const int FLEX_PIN5 = A4;
 // Pin connected to voltage divider output
 
 // Measure the voltage at 5V and the actual resistance of your
@@ -30,14 +34,25 @@ const float BEND_RESISTANCE = 90000.0; // resistance at 90 deg
 void setup() 
 {
   Serial.begin(9600);
-  pinMode(FLEX_PIN, INPUT);
+  pinMode(FLEX_PIN1, INPUT);
+  pinMode(FLEX_PIN2, INPUT);
+  pinMode(FLEX_PIN3, INPUT);
+  pinMode(FLEX_PIN4, INPUT);
+  pinMode(FLEX_PIN5, INPUT);
 }
 
 void loop() 
 {
-  Serial.println(getDetails(FLEX_PIN));
+  Serial.println(getDetails(FLEX_PIN1));
+  Serial.println(getDetails(FLEX_PIN2));
+  Serial.println(getDetails(FLEX_PIN3));
+  Serial.println(getDetails(FLEX_PIN4));
+  Serial.println(getDetails(FLEX_PIN5));
+
+  Serial.println("\n");
   
-  delay(500);
+ 
+  delay(2000);
 }
 
 String getDetails(int FLEX_PIN){
