@@ -4,7 +4,7 @@
             "outputFile": "/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v12/values-v12.xml",
             "map": [
                 {
-                    "source": "/Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/9e14fcecdcf10154d09d3e3a9022c8e0/res/values-v12/values-v12.xml",
+                    "source": "/Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/488227026e202701538339175c145165/res/values-v12/values-v12.xml",
                     "from": {
                         "startLines": "2,5,8,9",
                         "startColumns": "4,4,4,4",

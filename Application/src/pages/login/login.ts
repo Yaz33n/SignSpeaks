@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
 import { HomePage } from '../home/home';
 import { MenuController } from 'ionic-angular';
+import { UserService } from '../../app/user.service';
 
 @IonicPage()
 @Component({
@@ -11,20 +12,84 @@ import { MenuController } from 'ionic-angular';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public menu: MenuController) {
-    //this will diabale the side menue in the login screen
+  //this variable will store the login button pressed status
+  isLoginPressed:boolean=false;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,public menu: MenuController,public userService:UserService) {
+    //this will diabale the side menu in the login screen
     this.menu.enable(false);
+    this.isLoginPressed=false;
   }
 
-  //this method will chage the page to the RegisterPage
-  goToRegisterPage(){   
-    this.navCtrl.push(RegisterPage);    
+  //This is the user JSON object that will be passed to the onLogin Method
+  // user={
+  //   'email' : null,
+  //   'password' : null
+  // }
+
+  user={
+    "email": "wdevon99@gmail.com",
+    "password": "123456"
   }
+
+  //=== === === === === === === === === ===  LOGIN METHOD == === === === === === === === === === ===
+  onLogin(){
+    console.log("Login Pressed");
+    this.isLoginPressed=true;
+    //checking if the textfield and password fields are empty or not
+    if(this.user.password==null || this.user.email==null){
+      //alert
+      alert("All fields must be filled!");
+    }else{
+      //subscribe to the observable returned to send a post request to login a user
+      this.userService.loginUser(this.user).subscribe(
+        (response)=>{
+          
+          let body= JSON.parse(response._body);
+          let loginStatus = body.auth;
+
+          //checking the staus to check if the user credentials are valid
+          if(loginStatus){
+            //changing the page to the home page
+            this.goToHomePage();
+            alert("Welcome :)");    
+
+          }
+
+        },
+        (error)=>{
+          //displaying the login failed alert
+          alert("Login Failed , Invalid Credentials");
+          this.isLoginPressed=false;
+          console.log("ERROR :");
+          console.log(error);
+        }
+      );
+
+    }
+  }
+
+  //== === === === === === === === === === === == === === === === === === === === === === == === ===
+
+  saveJwtToken(){
+
+  }
+
+  
+
+  //=== === === === === === === === === PAGE NAVIGATION === === === === === === === === === === ===
 
   //this method will chage the page to the RegisterPage
   goToHomePage(){   
     this.navCtrl.push(HomePage);    
   }
+  //this method will chage the page to the RegisterPage
+  goToRegisterPage(){   
+    this.navCtrl.push(RegisterPage);    
+  }
+
+
+  //=== === === === === === === === === === === === === === === === === === === === === === === ===
 
 
 }

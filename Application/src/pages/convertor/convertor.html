@@ -19,8 +19,8 @@
     </p>
 
     <!-- this div section will appear if the device is NOT connected to the glove -->
-    <!-- <div [hidden]='connectionStatus'> -->
-    <div [hidden]='true'>
+    <div [hidden]='connectionStatus'>
+    <!-- <div [hidden]='true'> -->
         <ion-card>      
            <ion-card-content>  
             You can not use the <b>sign to text or speech </b>convertor 
@@ -31,32 +31,35 @@
                 Go back to Device Info 
             </button>
             </ion-card-content>                
-        </ion-card>      
+        </ion-card> 
+    
     </div>
 
     <!-- this div section  will appear only if the decive is connected to the glove -->
     <div>
-        <!-- <div [hidden]='!connectionStatus'> -->
-        <div [hidden]='false'>
-            <ion-card>      
+        <div [hidden]='!connectionStatus'>
+        <!-- <div [hidden]='false'> -->
+            <ion-card>  
+
+                <button *ngIf='!isSubscribedToBluetooth' ion-button color="" (click)='subscribeDataFromBluetooth()'>Start Session</button>  
+                <button *ngIf='isSubscribedToBluetooth' ion-button color="danger" (click)='endSubscriptionFromBluetooth()'>End Session</button>        
+                    
                 <ion-card-header>
                 You:
                 <hr>
                 <ion-item>
                         <ion-label>Enable speech output</ion-label>
-                        <ion-toggle [(ngModel)]="enableSpeech"></ion-toggle>
+                        <ion-toggle [(ngModel)]="isSoundOn"></ion-toggle>
                 </ion-item>
                 <hr>
                 </ion-card-header>      
                 <ion-card-content>  
+                
+                    <ion-textarea [(ngModel)]="msgFromGlove" class="textAreaMsgFromGlove" disabled='false'></ion-textarea>
 
-                    <!-- <p>
-                        Sign to text coverted text will appear here
-                    <p> -->
-                    <ion-textarea [(ngModel)]="msgFromGlove" class="textAreaMsgFromGlove" disabled='true'></ion-textarea>
                     <button ion-button color="secondary" (click)='readDataFromBluetooth()'>Get Data test</button>
                     
-                    <button ion-button color="danger" (click)='testAudio()'>Record audio</button>
+                 
                 </ion-card-content>                
             </ion-card>
         </div>    
@@ -67,11 +70,11 @@
             </ion-card-header>
             <ion-card-content>  
                 <p>
-                    Speech to text coverted text will appear here
+                    <ion-textarea [(ngModel)]="convertedSpeechMessage" class="textAreaMsgFromGlove" disabled='false'></ion-textarea>
                 <p>
                 <hr>
                 <div >
-                    <button ion-button outline icon-only >
+                    <button ion-button outline icon-only  (click)='listenForSpeech()' >
                         <ion-icon name="mic"></ion-icon>
                     </button>
                 </div>
@@ -89,3 +92,18 @@
 <button ion-button (click)="sendDataToBluetooth()"> Test Send Data </button>
 <button ion-button (click)="readDataToBluetooth()"> Test Read Data </button>
 <p> Normal = {{dataString}}</p> -->
+
+
+
+<!-- <br>
+<button ion-button color="secondary" (click)='sayText()'>Say Text</button>
+<br>
+<button ion-button color="danger" (click)='isSpeechSupported()'> isSpeechSupported</button>
+<br>
+<button ion-button color="danger" (click)='getPermission()'> getPermission</button>
+<br>
+<button ion-button color="danger" (click)='hasPermission()'> hasPermission</button>
+<br>
+<button ion-button color="danger" (click)='getSupportedLanguages()'> getSupportedLanguages </button>
+<br>
+<button ion-button color="danger" (click)='listenForSpeech()'> listen For Speech</button> -->

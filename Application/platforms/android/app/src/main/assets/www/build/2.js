@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 280:
+/***/ 279:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18,21 +18,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ConvertorPageModule = (function () {
-    function ConvertorPageModule() {
-    }
-    ConvertorPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__convertor__["a" /* ConvertorPage */],
-            ],
-            imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__convertor__["a" /* ConvertorPage */]),
-            ],
-        })
-    ], ConvertorPageModule);
-    return ConvertorPageModule;
-}());
+let ConvertorPageModule = class ConvertorPageModule {
+};
+ConvertorPageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__convertor__["a" /* ConvertorPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__convertor__["a" /* ConvertorPage */]),
+        ],
+    })
+], ConvertorPageModule);
 
 //# sourceMappingURL=convertor.module.js.map
 

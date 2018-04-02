@@ -4,7 +4,7 @@
             "outputFile": "/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/9e14fcecdcf10154d09d3e3a9022c8e0/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "source": "/Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/488227026e202701538339175c145165/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

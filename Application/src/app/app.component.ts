@@ -16,7 +16,7 @@ import { ConvertorPage } from '../pages/convertor/convertor';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any =HomePage;
+  rootPage: any = RegisterPage;
 
   pages: Array<{title: string, component: any,icon:any}>;
 

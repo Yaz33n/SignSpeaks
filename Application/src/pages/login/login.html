@@ -5,19 +5,22 @@
       </div>
     <ion-list text-center>
         <ion-item class="ionItemLogin">
-          <ion-input type="text" placeholder="Email"></ion-input>
+          <ion-input type="text" placeholder="Email" [(ngModel)]="user.email"></ion-input>
         </ion-item>
         <ion-item class="ionItemLogin">
-          <ion-input type="password" placeholder="Password"></ion-input>
+          <ion-input type="password" placeholder="Password" [(ngModel)]="user.password" ></ion-input>
         </ion-item>
     </ion-list> 
     <div text-center>
-      <button ion-button icon-left color="blueDark"  (click)='goToHomePage()'>
+      <button ion-button icon-left color="blueDark"  (click)='onLogin()'>
         <ion-icon name="key" ></ion-icon>Login     
       </button>
       <br>
       <br>
-      <a href="#" color="light" >Forgot password?</a>
+      <a href="#" color="light"> Forgot password?</a>
+      <br>
+      <br>
+      <ion-spinner name="crescent" *ngIf="isLoginPressed"></ion-spinner>
       
     </div>
   </div>
