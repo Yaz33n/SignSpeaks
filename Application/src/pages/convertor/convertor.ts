@@ -6,6 +6,8 @@ import { BluetoothSerial } from '@ionic-native/bluetooth-serial';
 import { TextToSpeech } from '@ionic-native/text-to-speech';
 import { SpeechRecognition } from '@ionic-native/speech-recognition';
 
+import { DeviceService } from '../../services/device.service';
+
 
 @IonicPage()
 @Component({
@@ -27,7 +29,7 @@ export class ConvertorPage {
   //this variable will store the text retured from the speech convertion
   convertedSpeechMessage:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public bluetoothSerial: BluetoothSerial,public textToSpeech: TextToSpeech, public speechRecognition: SpeechRecognition) {
+  constructor(public deviceService:DeviceService,public navCtrl: NavController, public navParams: NavParams, public bluetoothSerial: BluetoothSerial,public textToSpeech: TextToSpeech, public speechRecognition: SpeechRecognition) {
 
     //Getting the data passed from the previous page
     this.bluetoothSerial = navParams.get('bluetoothSerialObj');
@@ -37,6 +39,25 @@ export class ConvertorPage {
     //this.subscribeDataFromBluetooth(); 
 
   }
+  //=== === === === === ===  REST API CALLS === === === === === ==== === === ==== === === ===
+
+  value={
+    "message":"111:111:111:111"
+  };
+
+  onDataRecieved(){
+    this.deviceService.sendData(this.value).subscribe(
+      (response)=>{
+        console.log(response);
+      },
+      (error)=>{
+        console.log(error);
+      }
+    );
+
+  }
+
+
 
   //=== === === === === ===  TEXT TO SPEECH AND SPEECH TO TEXT METODS === === === === === ===
     
