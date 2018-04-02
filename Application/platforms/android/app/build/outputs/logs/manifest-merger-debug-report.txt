@@ -4,16 +4,16 @@ ADDED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src
 INJECTED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src/main/AndroidManifest.xml:2:1-23:12
 INJECTED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src/main/AndroidManifest.xml:2:1-23:12
 INJECTED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src/main/AndroidManifest.xml:2:1-23:12
-MERGED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/9e14fcecdcf10154d09d3e3a9022c8e0/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-v4:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/8aeac3ee10e22e2e7f00c796bee485d6/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/488227026e202701538339175c145165/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-v4:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/8e9a66778446888ef86a5283d5c6b516/AndroidManifest.xml:17:1-31:12
 MERGED from [:CordovaLib] /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:1-27:12
-MERGED from [com.android.support:support-fragment:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/a69beaa06a69752fb6d9d6115992c5b2/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-media-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/caedf5b1e94dc7cf62d51d574ec4f8b8/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/5383ee23bdabaf185cc342a1af461f67/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:animated-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/9a080b34e2a7b60ce4cab446aaa0da97/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-core-ui:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/0c482011718fb3e97f50a0230bacecf6/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/ea7f43a647b9635eec934070d66fd343/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/1a8dcaa4395dbbbd1cd792db7218e387/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/2fc28879f7e45b7bba8aa5ee2af1e0a9/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/d0e2d751fa0476c4bd13c86aeb187bd5/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/35d48ede73d0f14e772839e309827ebd/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/b62ab10cf4034246984d947d70d02f9d/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-core-ui:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/59d95561bdc0630dab16555db23785f8/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/ec8b9a300e1228d122f09e3796d1f892/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/9b11aa02e663b990f6df2f43ce5824a1/AndroidManifest.xml:17:1-31:12
 INJECTED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src/main/AndroidManifest.xml:2:1-23:12
 INJECTED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src/main/AndroidManifest.xml:2:1-23:12
 INJECTED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src/main/AndroidManifest.xml:2:1-23:12
@@ -53,24 +53,24 @@ ADDED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src
 		ADDED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
 application
 ADDED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src/main/AndroidManifest.xml:5:5-12:19
-MERGED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/9e14fcecdcf10154d09d3e3a9022c8e0/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/9e14fcecdcf10154d09d3e3a9022c8e0/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/8aeac3ee10e22e2e7f00c796bee485d6/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/8aeac3ee10e22e2e7f00c796bee485d6/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/a69beaa06a69752fb6d9d6115992c5b2/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/a69beaa06a69752fb6d9d6115992c5b2/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/caedf5b1e94dc7cf62d51d574ec4f8b8/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/caedf5b1e94dc7cf62d51d574ec4f8b8/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/5383ee23bdabaf185cc342a1af461f67/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/5383ee23bdabaf185cc342a1af461f67/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:animated-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/9a080b34e2a7b60ce4cab446aaa0da97/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/9a080b34e2a7b60ce4cab446aaa0da97/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-core-ui:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/0c482011718fb3e97f50a0230bacecf6/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/0c482011718fb3e97f50a0230bacecf6/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/ea7f43a647b9635eec934070d66fd343/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/ea7f43a647b9635eec934070d66fd343/AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/1a8dcaa4395dbbbd1cd792db7218e387/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/1a8dcaa4395dbbbd1cd792db7218e387/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/488227026e202701538339175c145165/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/488227026e202701538339175c145165/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/8e9a66778446888ef86a5283d5c6b516/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/8e9a66778446888ef86a5283d5c6b516/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/2fc28879f7e45b7bba8aa5ee2af1e0a9/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/2fc28879f7e45b7bba8aa5ee2af1e0a9/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/d0e2d751fa0476c4bd13c86aeb187bd5/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/d0e2d751fa0476c4bd13c86aeb187bd5/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/35d48ede73d0f14e772839e309827ebd/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/35d48ede73d0f14e772839e309827ebd/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/b62ab10cf4034246984d947d70d02f9d/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/b62ab10cf4034246984d947d70d02f9d/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-core-ui:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/59d95561bdc0630dab16555db23785f8/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/59d95561bdc0630dab16555db23785f8/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/ec8b9a300e1228d122f09e3796d1f892/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/ec8b9a300e1228d122f09e3796d1f892/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/9b11aa02e663b990f6df2f43ce5824a1/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/9b11aa02e663b990f6df2f43ce5824a1/AndroidManifest.xml:25:5-29:19
 	android:supportsRtl
 		ADDED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src/main/AndroidManifest.xml:5:114-140
 	android:label
@@ -107,28 +107,28 @@ ADDED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src
 		ADDED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src/main/AndroidManifest.xml:9:27-74
 uses-sdk
 ADDED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src/main/AndroidManifest.xml:13:5-74
-MERGED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/9e14fcecdcf10154d09d3e3a9022c8e0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/9e14fcecdcf10154d09d3e3a9022c8e0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/8aeac3ee10e22e2e7f00c796bee485d6/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/8aeac3ee10e22e2e7f00c796bee485d6/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/488227026e202701538339175c145165/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/488227026e202701538339175c145165/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/8e9a66778446888ef86a5283d5c6b516/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/8e9a66778446888ef86a5283d5c6b516/AndroidManifest.xml:21:5-23:54
 MERGED from [:CordovaLib] /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
 MERGED from [:CordovaLib] /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
-MERGED from [com.android.support:support-fragment:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/a69beaa06a69752fb6d9d6115992c5b2/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/a69beaa06a69752fb6d9d6115992c5b2/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/caedf5b1e94dc7cf62d51d574ec4f8b8/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/caedf5b1e94dc7cf62d51d574ec4f8b8/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/5383ee23bdabaf185cc342a1af461f67/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/5383ee23bdabaf185cc342a1af461f67/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/9a080b34e2a7b60ce4cab446aaa0da97/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/9a080b34e2a7b60ce4cab446aaa0da97/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/0c482011718fb3e97f50a0230bacecf6/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/0c482011718fb3e97f50a0230bacecf6/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/ea7f43a647b9635eec934070d66fd343/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/ea7f43a647b9635eec934070d66fd343/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/1a8dcaa4395dbbbd1cd792db7218e387/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/1a8dcaa4395dbbbd1cd792db7218e387/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-fragment:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/2fc28879f7e45b7bba8aa5ee2af1e0a9/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/2fc28879f7e45b7bba8aa5ee2af1e0a9/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/d0e2d751fa0476c4bd13c86aeb187bd5/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/d0e2d751fa0476c4bd13c86aeb187bd5/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/35d48ede73d0f14e772839e309827ebd/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/35d48ede73d0f14e772839e309827ebd/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/b62ab10cf4034246984d947d70d02f9d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/b62ab10cf4034246984d947d70d02f9d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/59d95561bdc0630dab16555db23785f8/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/59d95561bdc0630dab16555db23785f8/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/ec8b9a300e1228d122f09e3796d1f892/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/ec8b9a300e1228d122f09e3796d1f892/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/9b11aa02e663b990f6df2f43ce5824a1/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/9b11aa02e663b990f6df2f43ce5824a1/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/9e14fcecdcf10154d09d3e3a9022c8e0/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/488227026e202701538339175c145165/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		ADDED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src/main/AndroidManifest.xml:13:42-71
 	android:minSdkVersion
@@ -170,24 +170,24 @@ ADDED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src
 	android:name
 		ADDED from /Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/src/main/AndroidManifest.xml:22:22-68
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/9e14fcecdcf10154d09d3e3a9022c8e0/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/8aeac3ee10e22e2e7f00c796bee485d6/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/8aeac3ee10e22e2e7f00c796bee485d6/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/a69beaa06a69752fb6d9d6115992c5b2/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/a69beaa06a69752fb6d9d6115992c5b2/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/caedf5b1e94dc7cf62d51d574ec4f8b8/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/caedf5b1e94dc7cf62d51d574ec4f8b8/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/5383ee23bdabaf185cc342a1af461f67/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/5383ee23bdabaf185cc342a1af461f67/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/9a080b34e2a7b60ce4cab446aaa0da97/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:animated-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/9a080b34e2a7b60ce4cab446aaa0da97/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-core-ui:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/0c482011718fb3e97f50a0230bacecf6/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/0c482011718fb3e97f50a0230bacecf6/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/ea7f43a647b9635eec934070d66fd343/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/ea7f43a647b9635eec934070d66fd343/AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/1a8dcaa4395dbbbd1cd792db7218e387/AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/1a8dcaa4395dbbbd1cd792db7218e387/AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/488227026e202701538339175c145165/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/8e9a66778446888ef86a5283d5c6b516/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/8e9a66778446888ef86a5283d5c6b516/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/2fc28879f7e45b7bba8aa5ee2af1e0a9/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/2fc28879f7e45b7bba8aa5ee2af1e0a9/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/d0e2d751fa0476c4bd13c86aeb187bd5/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/d0e2d751fa0476c4bd13c86aeb187bd5/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/35d48ede73d0f14e772839e309827ebd/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/35d48ede73d0f14e772839e309827ebd/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/b62ab10cf4034246984d947d70d02f9d/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.4.0.aar/b62ab10cf4034246984d947d70d02f9d/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-core-ui:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/59d95561bdc0630dab16555db23785f8/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/59d95561bdc0630dab16555db23785f8/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/ec8b9a300e1228d122f09e3796d1f892/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.4.0.aar/ec8b9a300e1228d122f09e3796d1f892/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/9b11aa02e663b990f6df2f43ce5824a1/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/9b11aa02e663b990f6df2f43ce5824a1/AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/9e14fcecdcf10154d09d3e3a9022c8e0/AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/488227026e202701538339175c145165/AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/9e14fcecdcf10154d09d3e3a9022c8e0/AndroidManifest.xml:27:13-51
+		ADDED from [com.android.support:appcompat-v7:25.4.0] /Users/devon/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/488227026e202701538339175c145165/AndroidManifest.xml:27:13-51

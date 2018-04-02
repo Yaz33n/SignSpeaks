@@ -1,25 +1,25 @@
 
-<ion-content  padding class="background">
+<ion-content  padding class="background" >
   
-  <div >
+  <div>
       <div text-center class="logoWhiteContainer">
           <img  src="assets/imgs/whitelogo.png"  >
     </div>
     <ion-list text-center>
         <ion-item class="ionItemLogin">
-          <ion-input type="text" placeholder="Username"></ion-input>
+          <ion-input type="text" placeholder="Username" [(ngModel)]="user.name"></ion-input>
         </ion-item>
         <ion-item class="ionItemLogin">
-          <ion-input type="text" placeholder="Email"></ion-input>
+          <ion-input type="text" placeholder="Email" [(ngModel)]="user.email"></ion-input>
         </ion-item>
         <ion-item class="ionItemLogin">
-          <ion-input type="password" placeholder="Password"></ion-input>
+          <ion-input type="password" placeholder="Password" [(ngModel)]="user.password"></ion-input>
         </ion-item>
         <ion-item class="ionItemLogin">
-            <ion-input type="password" placeholder="Confirm Password"></ion-input>
+            <ion-input type="password" placeholder="Confirm Password" [(ngModel)]="user.cpassword"></ion-input>
         </ion-item>
         <ion-item class="ionItemLogin">
-          <ion-input type="number" placeholder="Mobile Number"></ion-input>
+          <ion-input type="number" placeholder="Mobile Number" [(ngModel)]="user.phoneNumber"></ion-input>
       </ion-item>
       
     </ion-list>
@@ -27,7 +27,7 @@
   
     <div text-center>
       
-      <button ion-button icon-left color="blueLight" >
+      <button ion-button icon-left color="blueLight" (click)="onSave()">
         <ion-icon name="key" > </ion-icon>
         Register
       </button>
@@ -35,7 +35,7 @@
       <br>
     </div>
     <div text-center>
-        <a href="#"  color="light" >Login as a guest </a>
+        <a color="light" (click)="goLoginPage()" >Login</a>
     </div>
     
   </div>

@@ -355,6 +355,71 @@ module.exports = [
         "clobbers": [
             "navigator.Base64"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-tts/www/tts.js",
+        "id": "cordova-plugin-tts.tts",
+        "pluginId": "cordova-plugin-tts",
+        "clobbers": [
+            "TTS"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-speechrecognition/www/speechRecognition.js",
+        "id": "cordova-plugin-speechrecognition.SpeechRecognition",
+        "pluginId": "cordova-plugin-speechrecognition",
+        "merges": [
+            "window.plugins.speechRecognition"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-advanced-http/www/lodash.js",
+        "id": "cordova-plugin-advanced-http.lodash",
+        "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+        "file": "plugins/cordova-plugin-advanced-http/www/umd-tough-cookie.js",
+        "id": "cordova-plugin-advanced-http.tough-cookie",
+        "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+        "file": "plugins/cordova-plugin-advanced-http/www/messages.js",
+        "id": "cordova-plugin-advanced-http.messages",
+        "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+        "file": "plugins/cordova-plugin-advanced-http/www/local-storage-store.js",
+        "id": "cordova-plugin-advanced-http.local-storage-store",
+        "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+        "file": "plugins/cordova-plugin-advanced-http/www/cookie-handler.js",
+        "id": "cordova-plugin-advanced-http.cookie-handler",
+        "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+        "file": "plugins/cordova-plugin-advanced-http/www/angular-integration.js",
+        "id": "cordova-plugin-advanced-http.angular-integration",
+        "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+        "file": "plugins/cordova-plugin-advanced-http/www/helpers.js",
+        "id": "cordova-plugin-advanced-http.helpers",
+        "pluginId": "cordova-plugin-advanced-http"
+    },
+    {
+        "file": "plugins/cordova-plugin-advanced-http/www/advanced-http.js",
+        "id": "cordova-plugin-advanced-http.http",
+        "pluginId": "cordova-plugin-advanced-http",
+        "clobbers": [
+            "cordova.plugin.http"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-advanced-http/src/browser/cordova-http-plugin.js",
+        "id": "cordova-plugin-advanced-http.http-proxy",
+        "pluginId": "cordova-plugin-advanced-http",
+        "runs": true
     }
 ];
 module.exports.metadata = 
@@ -371,7 +436,10 @@ module.exports.metadata =
     "cordova-plugin-media": "5.0.2",
     "cordova-plugin-media-capture": "3.0.1",
     "cordova-plugin-file-transfer": "1.7.1",
-    "com-badrit-base64": "0.2.0"
+    "com-badrit-base64": "0.2.0",
+    "cordova-plugin-tts": "0.2.3",
+    "cordova-plugin-speechrecognition": "1.1.2",
+    "cordova-plugin-advanced-http": "1.11.1"
 }
 // BOTTOM OF METADATA
 });
