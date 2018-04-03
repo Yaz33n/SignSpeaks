@@ -10,6 +10,7 @@ export class DeviceService{
     */
     private static jwtToken:any;
 
+    //Device Service class constructor
     constructor(public http:Http){
 
     }

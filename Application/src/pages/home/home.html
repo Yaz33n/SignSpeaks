@@ -11,11 +11,14 @@
   <div class="gloveImgContainer">
     <img  src="assets/imgs/glove.png" class="gloveImg">
     <p > Device Status :
+      <!-- 
+        Displaying the device connected status bases on the connectionStatus boolean
+        this will show the user if the device is connected or not very clearly and make the user experice and HCl better 
+      -->
       <b [hidden]='!connectionStatus' class="greenClass"> CONNECTED</b> 
       <b [hidden]='connectionStatus' class="redClass"> DISCONNECTED</b> 
     </p>
   </div>
-
 
   <ion-list padding >
     <div [hidden]='connectionStatus' >
@@ -28,6 +31,7 @@
       availlable Devices
     </ion-list-header>
     <ion-item *ngFor='let device of unpairedDevices'>
+      <!-- listing all the available devicles using a ngFor loop -->
       <span (click)="selectDevice(device.address)" text-center>
         {{device.name}}
       </span>

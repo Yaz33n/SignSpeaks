@@ -6,10 +6,9 @@
     <ion-title>convertor</ion-title>
   </ion-navbar>
 </ion-header> 
-
 <ion-content text-center>
     <div class="gloveImgContainer">
-        <!-- <img  src="assets/imgs/convertPageImg.png" class="gloveImg"> -->
+       <!-- Giving user quick details on info how to use app at the perticular point in the app -->
         <p >Make a sign to convert to text/speech</p>
     </div>
     <p > 
@@ -17,11 +16,9 @@
         <b [hidden]='!connectionStatus' class="greenClass"> CONNECTED</b> 
         <b [hidden]='connectionStatus' class="redClass"> DISCONNECTED</b> 
     </p>
-
     <!-- this div section will appear if the device is NOT connected to the glove -->
     <div [hidden]='connectionStatus'>
-    <!-- <div [hidden]='true'> -->
-        <ion-card>      
+        <ion-card>  
            <ion-card-content>  
             You can not use the <b>sign to text or speech </b>convertor 
             when device is not connected!
@@ -35,10 +32,10 @@
     
     </div>
 
-    <!-- this div section  will appear only if the decive is connected to the glove -->
+    <!-- this div section  will appear only if the device is connected to the glove , this gives the use a better user experice-->
+    <!-- the section for text to speech conversion  -->
     <div>
         <div [hidden]='!connectionStatus'>
-        <!-- <div [hidden]='false'> -->
             <ion-card>  
 
                 <button *ngIf='!isSubscribedToBluetooth' ion-button color="" (click)='subscribeDataFromBluetooth()'>Start Session</button>  
@@ -48,22 +45,21 @@
                 You:
                 <hr>
                 <ion-item>
+                        <!-- This toggle button will help to turn on and off the sound/ speech output  -->
+                        <!--speech output makes the application more accesible for people without sight(bind can comunicate with deaf)  -->
                         <ion-label>Enable speech output</ion-label>
                         <ion-toggle [(ngModel)]="isSoundOn"></ion-toggle>
                 </ion-item>
                 <hr>
                 </ion-card-header>      
                 <ion-card-content>  
-                
                     <ion-textarea [(ngModel)]="msgFromGlove" class="textAreaMsgFromGlove" disabled='false'></ion-textarea>
-
-                    <button ion-button color="secondary" (click)='readDataFromBluetooth()'>Get Data test</button>
-                    
-                 
+                    <button ion-button color="secondary" (click)='readDataFromBluetooth()'>Get Data test</button>          
                 </ion-card-content>                
             </ion-card>
         </div>    
-        <ion-card>      
+        <ion-card> 
+            <!-- the section for speech to text conversion  -->
             <ion-card-header>
                 Partner:
                 <hr>
@@ -84,8 +80,7 @@
             </ion-card-content>           
         </ion-card>
     </div>   
-    <button ion-button outline icon-only  (click)='onDataRecieved()' > data recieved</button>
-    <button ion-button outline icon-only  (click)='sayText()' >play</button>
+
 </ion-content>
 
 
