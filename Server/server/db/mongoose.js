@@ -1,5 +1,4 @@
 // jshint esversion: 6
-
 const mongoose = require('mongoose');
 // Configuration file
 const config = require('../config/config.json');

@@ -9,9 +9,9 @@ const mongoose = require('mongoose'); // Schema module
 const _ = require('lodash'); // Util module
 const bcryptjs = require('bcryptjs'); // Hashing algorithm for PWs
 const JWT = require('jsonwebtoken'); // Token generator for REST Client
-
 const config = require('../config/config.json'); // Applicaion Configuration
 
+// Defining the schema
 let UserSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -104,6 +104,7 @@ UserSchema.statics.findByToken = function (token) {
     });
 };
 
+// Encrypting the password before saving the user object.
 UserSchema.pre('save', function (next) {
 
     let user = this;
@@ -119,9 +120,12 @@ UserSchema.pre('save', function (next) {
     }
 });
 
+// Overriding toJSON method
 UserSchema.methods.toJSON = function () {
     return _.pick(this.toObject(), [/*'_id',*/ 'name', 'email']);
 };
+
+// Generating auth tokens for users.
 UserSchema.methods.generateAuthToken = function () {
     let user = this;
     let _access = 'auth';
@@ -136,5 +140,5 @@ UserSchema.methods.generateAuthToken = function () {
     });
 };
 
-const User = mongoose.model('Users', UserSchema);
+const User = mongoose.model('Users', UserSchema); // Building the collection
 module.exports = { User };
