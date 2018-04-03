@@ -1,11 +1,12 @@
-/******************************************************************************
+/****************************************************************************************************************************************************
 
 SignSpeaks - Sign language translation glove
 Author - Return 0;
 
-******************************************************************************/
+******************************************************************************************************************************************************/
 
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------FLEX SENSORS---------------------------------------------------------------------------------------
 
 //Declare 5 variables for analog pin inputs and assign the analog pin value. Declare it as const as their value get never change.
 
@@ -23,35 +24,65 @@ const float STRAIGHT_RESISTANCE = 37300.0;
 const float BEND_RESISTANCE = 90000.0; 
 
 //Declare 5 variables for 5 flex seonsors.float finger1;
+float finger1;
 float finger2;
 float finger3;
 float finger4;
 float finger5;
 
+String prevPhrase = "";
+//----------------------------------------------------------------------ACCELEROMETER---------------------------------------------------------------------------------------
+#include<Wire.h>
+const int MPU_addr=0x68;  // I2C address of the MPU-6050
+int16_t AcX,AcY,AcZ;
+double TotalAcc;
 
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------BLUETOOTH---------------------------------------------------------------------------------------
+#include <SoftwareSerial.h>
+SoftwareSerial BTserial(5, 6); // RX | TX
+// Connect the HC-06 TX to the Arduino RX on pin 2. 
+// Connect the HC-06 RX to the Arduino TX on pin 3 through a voltage divider.
 
 //This function is called once when the code starts. This method is to initilize pin modes.
 void setup() 
 {
 
-//Set the data rate in bits per second (baud) for serial data transmission. 
+  Wire.begin();
+  Wire.beginTransmission(MPU_addr);
+  Wire.write(0x6B);  // PWR_MGMT_1 register
+  Wire.write(0);     // set to zero (wakes up the MPU-6050)
+  Wire.endTransmission(true);
   Serial.begin(9600);
-
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
   //Define above declared ports as input ports.
   pinMode(FLEX_PIN1, INPUT);
   pinMode(FLEX_PIN2, INPUT);
   pinMode(FLEX_PIN3, INPUT);
   pinMode(FLEX_PIN4, INPUT);
   pinMode(FLEX_PIN5, INPUT);
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  // HC-06 default serial speed is 9600
+    BTserial.begin(9600);  
 }
+
 
 //This function will be executed from top to bottom, until the bottom function is reached. And this will run again and again.
 void loop() 
 {
+  
+  Wire.beginTransmission(MPU_addr);
+  Wire.write(0x3B);  // starting with register 0x3B (ACCEL_XOUT_H)
+  Wire.endTransmission(false);
+  Wire.requestFrom(MPU_addr,14,true);  // request a total of 14 registers
+  AcX=Wire.read()<<8|Wire.read();  // 0x3B (ACCEL_XOUT_H) & 0x3C (ACCEL_XOUT_L)    
+  AcY=Wire.read()<<8|Wire.read();  // 0x3D (ACCEL_YOUT_H) & 0x3E (ACCEL_YOUT_L)
+  AcZ=Wire.read()<<8|Wire.read();  // 0x3F (ACCEL_ZOUT_H) & 0x40 (ACCEL_ZOUT_L)
 
+  TotalAcc = sqrt(pow(AcX,2) +  pow(AcY,2) +  pow(AcZ,2))/1000;
+  
   //call the getDetails function and pass the analog pin port number as an argument and get the return value.
   finger1 = getDetails(FLEX_PIN1);
   finger2 = getDetails(FLEX_PIN2);
@@ -59,13 +90,15 @@ void loop()
   finger4 = getDetails(FLEX_PIN4);
   finger5 = getDetails(FLEX_PIN5);
 
-  Serial.println("\n");
+  String phrase = String(finger1)+":"+String(finger2)+":"+String(finger3)+":"+String(finger4)+":"+String(finger5)+":"+String(TotalAcc);
+  if(phrase != prevPhrase){
+    Serial.println(phrase+"\n");   
+    BTserial.println(phrase + "\n");
+    prevPhrase = phrase;
+  }
 
-  //call getLetter function to capture the letter.
-  Serial.println(getLetter()+ "\n"); 
-
-  //set a delay of 1.5 seconds
-  delay(1500);
+  //set a delay of 1 second
+  delay(1000);
 
   
 }
@@ -84,293 +117,6 @@ float getDetails(int FLEX_PIN){
 
   float flexKR = flexR / 1000;
   
-  Serial.println("Resistance: " + String(flexKR) + " K ohms\t\tBend: " + String(angle) + " degrees");
-
-   return flexKR;
+  return flexKR;
  
 }
-
-//this will return the letter according to the finger and the angle of the finger.
-String getLetter(){
-  
-   if (finger1 >= 1600 && finger1 <= 1900){
-    if(finger2 >= 2600 && finger2 <=3200){
-      if (finger3 >= 2100 && finger3 <= 2500){
-        if(finger4 >= 2600 && finger4 <= 3200){
-          if(finger5 >= 2500 && finger5 <=3500){
-            return "A";
-            }
-          }
-        }
-      }
-    }
-
-    if (finger1 >= 2500 && finger1 <= 2900){
-    if(finger2 >= 1300 && finger2 <=1700){
-      if (finger3 >= 1300 && finger3 <= 1700){
-        if(finger4 >= 1300 && finger4 <= 1700){
-          if(finger5 >= 1300 && finger5 <=1700){
-            return "B";
-            }
-          }
-        }
-      }
-    }
-
-     if (finger1 >= 1500 && finger1 <= 1700){
-    if(finger2 >= 1500 && finger2 <=2300){
-      if (finger3 >= 1700 && finger3 <= 2000){
-        if(finger4 >= 1800 && finger4 <= 2300){
-          if(finger5 >= 1600 && finger5 <=2100){
-            return "C";
-            }
-          }
-        }
-      }
-    }
-
-      if (finger1 >= 1600 && finger1 <= 2100){
-    if(finger2 >= 2000 && finger2 <=2600){
-      if (finger3 >= 1700 && finger3 <= 2000){
-        if(finger4 >= 1800 && finger4 <= 2300){
-          if(finger5 >= 1500 && finger5 <=1600){
-            return "D";
-            }
-          }
-        }
-      }
-    }
-
-       if (finger1 >= 2600 && finger1 <= 3200){
-    if(finger2 >= 2600 && finger2 <= 3000){
-      if (finger3 >= 2200 && finger3 <= 2600){
-        if(finger4 >= 3100 && finger4 <= 4100){
-          if(finger5 >= 2600 && finger5 <= 3500){
-            return "E";
-            }
-          }
-        }
-      }
-    }
-
-     if (finger1 >= 1500 && finger1 <= 2300){
-    if(finger2 >= 2200 && finger2 <= 3000){
-      if (finger3 >= 1500 && finger3 <= 1600){
-        if(finger4 >= 1500 && finger4 <= 1700){
-          if(finger5 >= 1500 && finger5 <= 1600){
-            return "F";
-            }
-          }
-        }
-      }
-    }
-
-    if (finger1 >= 1700 && finger1 <= 2200){
-    if(finger2 >= 1600 && finger2 <= 1800){
-      if (finger3 >= 2000 && finger3 <= 2200){
-        if(finger4 >= 2600 && finger4 <= 3200){
-          if(finger5 >= 1900 && finger5 <= 3400){
-            return "G";
-            }
-          }
-        }
-      }
-    }
-
-    if (finger1 >= 1800 && finger1 <= 2500){
-    if(finger2 >= 1400 && finger2 <= 1800){
-      if (finger3 >= 1300 && finger3 <= 1600){
-        if(finger4 >= 3400 && finger4 <= 4100){
-          if(finger5 >= 3400 && finger5 <= 3700){
-            return "H";
-            }
-          }
-        }
-      }
-    }
-
-    if (finger1 >= 1900 && finger1 <= 2600){
-    if(finger2 >= 2800 && finger2 <= 3200){
-      if (finger3 >= 2500 && finger3 <= 2700){
-        if(finger4 >= 2600 && finger4 <= 3200){
-          if(finger5 >= 1500 && finger5 <= 1700){
-            return "I";
-            }
-          }
-        }
-      }
-    }
-
-     if (finger1 >= 1300 && finger1 <= 1500){
-    if(finger2 >= 1500 && finger2 <= 1700){
-      if (finger3 >= 1300 && finger3 <= 1500){
-        if(finger4 >= 2500 && finger4 <= 3200){
-          if(finger5 >= 2200 && finger5 <= 2900){
-            return "K";
-            }
-          }
-        }
-      }
-    }
-
-    if (finger1 >= 1300 && finger1 <= 1500){
-    if(finger2 >= 1600 && finger2 <= 1800){
-      if (finger3 >= 2000 && finger3 <= 2500){
-        if(finger4 >= 2600 && finger4 <= 3000){
-          if(finger5 >= 2600 && finger5 <= 3400){
-            return "L";
-            }
-          }
-        }
-      }
-    }
-
-      if (finger1 >= 2800 && finger1 <= 3700){
-    if(finger2 >= 2200 && finger2 <= 2700){
-      if (finger3 >= 1900 && finger3 <= 2300){
-        if(finger4 >= 2000 && finger4 <= 2900){
-          if(finger5 >= 2000 && finger5 <= 2500){
-            return "M";
-            }
-          }
-        }
-      }
-    }
-
-     if (finger1 >= 2000 && finger1 <= 2500){
-    if(finger2 >= 2200 && finger2 <= 2700){
-      if (finger3 >= 1900 && finger3 <= 2300){
-        if(finger4 >= 3000 && finger4 <= 3700){
-          if(finger5 >= 2500 && finger5 <= 3200){
-            return "N";
-            }
-          }
-        }
-      }
-    }
-
-      if (finger1 >= 1800 && finger1 <= 2700){
-    if(finger2 >= 2500 && finger2 <= 3000){
-      if (finger3 >= 2200 && finger3 <= 2600){
-        if(finger4 >= 2800 && finger4 <= 3500){
-          if(finger5 >= 2600 && finger5 <= 3200){
-            return "O";
-            }
-          }
-        }
-      }
-    }
-
-    if (finger1 >= 1400 && finger1 <= 1700){
-    if(finger2 >= 1500 && finger2 <= 1700){
-      if (finger3 >= 1500 && finger3 <= 1700){
-        if(finger4 >= 1800 && finger4 <= 2200){
-          if(finger5 >= 1800 && finger5 <= 2300){
-            return "P";
-            }
-          }
-        }
-      }
-    }
-
-     if (finger1 >= 1300 && finger1 <= 1500){
-    if(finger2 >= 1600 && finger2 <= 2100){
-      if (finger3 >= 1800 && finger3 <= 2100){
-        if(finger4 >= 2500 && finger4 <= 3200){
-          if(finger5 >= 2300 && finger5 <= 3200){
-            return "Q";
-            }
-          }
-        }
-      }
-    }
-
-       if (finger1 >= 1900 && finger1 <= 2400){
-    if(finger2 >= 1600 && finger2 <= 1800){
-      if (finger3 >= 1400 && finger3 <= 1600){
-        if(finger4 >= 3400 && finger4 <= 4200){
-          if(finger5 >= 3000 && finger5 <= 3500){
-            return "R";
-            }
-          }
-        }
-      }
-    }
-
-     if (finger1 >= 2000 && finger1 <= 3000){
-    if(finger2 >= 3000 && finger2 <= 3500){
-      if (finger3 >= 2500 && finger3 <= 2900){
-        if(finger4 >= 3500 && finger4 <= 4500){
-          if(finger5 >= 3500 && finger5 <= 4100){
-            return "S";
-            }
-          }
-        }
-      }
-    }
-
-      if (finger1 >= 1300 && finger1 <= 1500){
-    if(finger2 >= 1700 && finger2 <= 1900){
-      if (finger3 >= 2000 && finger3 <= 2300){
-        if(finger4 >= 2800 && finger4 <= 3200){
-          if(finger5 >= 2800 && finger5 <= 3200){
-            return "T";
-            }
-          }
-        }
-      }
-    }
-
-     if (finger1 >= 2000 && finger1 <= 2600){
-    if(finger2 >= 1500 && finger2 <= 1700){
-      if (finger3 >= 1400 && finger3 <= 1600){
-        if(finger4 >= 3400 && finger4 <= 4100){
-          if(finger5 >= 2600 && finger5 <= 3500){
-            return "V";
-            }
-          }
-        }
-      }
-    }
-
-     if (finger1 >= 1900 && finger1 <= 2200){
-    if(finger2 >= 1500 && finger2 <= 1700){
-      if (finger3 >= 1400 && finger3 <= 1500){
-        if(finger4 >= 1600 && finger4 <= 1700){
-          if(finger5 >= 3000 && finger5 <= 3700){
-            return "W";
-            }
-          }
-        }
-      }
-    }
-
-     if (finger1 >= 3000 && finger1 <= 3700){
-    if(finger2 >= 2000 && finger2 <= 2600){
-      if (finger3 >= 2200 && finger3 <= 2500){
-        if(finger4 >= 2800 && finger4 <= 3200){
-          if(finger5 >= 2800 && finger5 <= 3200){
-            return "X";
-            }
-          }
-        }
-      }
-    }
-
-     if (finger1 >= 1500 && finger1 <= 1700){
-    if(finger2 >= 2300 && finger2 <= 2900){
-      if (finger3 >= 1900 && finger3 <= 2500){
-        if(finger4 >= 2200 && finger4 <= 3000){
-          if(finger5 >= 1500 && finger5 <= 1600){
-            return "Y";
-            }
-          }
-        }
-      }
-    }
-
-    return "no letter";
-  
-}
-
-
