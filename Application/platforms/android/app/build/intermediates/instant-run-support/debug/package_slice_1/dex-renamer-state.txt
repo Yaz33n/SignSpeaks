@@ -1,4 +1,4 @@
-#Mon Apr 02 09:59:47 IST 2018
-base.0=/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1465
+#Tue Apr 03 01:31:02 IST 2018
+base.0=/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1522
 renamed.0=classes.dex
-file.0=/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1465/classes.dex
+file.0=/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/transforms/dexMerger/debug/1522/classes.dex

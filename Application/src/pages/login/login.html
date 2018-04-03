@@ -1,7 +1,11 @@
 <ion-content  padding class="background">
   <div>
       <div text-center class="logoWhiteContainer">
-         <img  src="assets/imgs/whitelogo.png">
+        <!-- 
+        alt text is set to the images for improved HCL 
+        (Accessablity will be improved for the blind since alt text can be used in screen reader)
+         -->
+        <img  src="assets/imgs/whitelogo.png" alt="Signspeaks Logo">
       </div>
     <ion-list text-center>
         <ion-item class="ionItemLogin">
@@ -17,9 +21,11 @@
       </button>
       <br>
       <br>
-      <a href="#" color="light"> Forgot password?</a>
+      <!-- a forget password field is used to make the user experice of the user better in case he losses his password -->
+      <a href="#" color="light" (click)="onForgetPassword()"> Forgot password?</a>
       <br>
       <br>
+      <!-- to improve the user experice (UX) / HCL ,a spinner is used to indicate the login process is goin on when login button is pressed -->
       <ion-spinner name="crescent" *ngIf="isLoginPressed"></ion-spinner>
       
     </div>

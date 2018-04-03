@@ -16,8 +16,6 @@ import { DeviceService } from '../../services/device.service';
 })
 export class ConvertorPage {
 
-  // dataString = "blank";
-
   //this variable will save true of flase based on the sound on off toggle
   isSoundOn:boolean=true;
   //this variable will store the connection status - If Connected to device or not
@@ -35,38 +33,51 @@ export class ConvertorPage {
     this.bluetoothSerial = navParams.get('bluetoothSerialObj');
     this.connectionStatus = navParams.get('connectionStatus');
 
-    //ERRORRRR DUE TO THIS in browser !!! But it works in real device
+    //ERROR DUE TO THIS in the browser !!! But it works in real device
     //this.subscribeDataFromBluetooth(); 
 
   }
   //=== === === === === ===  REST API CALLS === === === === === ==== === === ==== === === ===
 
-  value={
-    "message":"111:111:111:111"
-  };
-
-  onDataRecieved(){
-    this.deviceService.sendData(this.value).subscribe(
+  /**
+   * This method will make a Rest api call to get the correct word for the bluetoothPacket sent via a post request
+   * @param bluetoothPacket : A JSON object containg the data recieved from the glove via bluetooth
+   */
+  onDataRecieved(bluetoothPacket){
+    this.deviceService.sendData(bluetoothPacket).subscribe(
       (response)=>{
         console.log(response);
+        let body= JSON.parse(response._body);
+        let message=body.word;
+
+        console.log("MESSAGE=>");
+        console.log(message);  
+
+        if(!message){
+          alert(body.error);
+        }else{
+          alert(message);
+        }
+
+        this.msgFromGlove=message;
       },
       (error)=>{
         console.log(error);
       }
     );
-
   }
-
 
 
   //=== === === === === ===  TEXT TO SPEECH AND SPEECH TO TEXT METODS === === === === === ===
     
-  //this method will convert TEXT to SPEECH and play 
+  /**
+   * this method will convert TEXT to SPEECH and play it if no exceptions are thrown 
+  */
   async sayText():Promise<any>{
     try {
       await this.textToSpeech.speak(this.msgFromGlove);
       console.log("Success")
-
+    
     } catch (error) {
       console.log("ERROR :"+error)
     }
@@ -152,15 +163,17 @@ export class ConvertorPage {
 
     //This function will bind the bluethooth data to the text area
     function invoke(ins, dataObservable) {
-      dataObservable.subscribe((res) => {
-        ins.msgFromGlove = res;
-        alert(`Data is : ${ins.msgFromGlove}`);
 
-        // //checking if sound is on
-        // if(this.isSoundOn){
-        //   //calling sat text method to output the speech
-        //   this.sayText();
-        // }
+      dataObservable.subscribe((res) => {
+
+        let dataPacket=res;
+        ins.onDataRecieved({"message" : dataPacket });
+
+        //checking if sound is on
+        if(ins.isSoundOn){
+          //calling sat text method to output the speech
+          ins.sayText();
+        }
        
       }).catch(e => {
         console.log("SUBSCRIBE ERROR =========> "+e);
@@ -179,6 +192,7 @@ export class ConvertorPage {
     this.navCtrl.push(HomePage);
   }
 
+
    //=== === === === === === === === === === TESTING METHODS === === === === === === === === === ===
 
    //this method will SEND data via the bluethooth serial  - FOR TESTING
@@ -196,7 +210,9 @@ export class ConvertorPage {
     function invoke(ins, dataPromise) {
       dataPromise.then((res) => {
         ins.msgFromGlove = res;
+        //for testing
         alert(`Data is -> ${ins.msgFromGlove}`);
+        
       }).catch(e => {
         console.log(e);
       });

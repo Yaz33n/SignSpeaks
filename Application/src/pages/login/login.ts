@@ -18,20 +18,19 @@ export class LoginPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,public menu: MenuController,public userService:UserService,public deviceService:DeviceService) {
     //this will diabale the side menu in the login screen
-    this.menu.enable(true);
+    this.menu.enable(false);
     this.isLoginPressed=false;
   }
 
   //This is the user JSON object that will be passed to the onLogin Method
-  // user={
-  //   'email' : null,
-  //   'password' : null
-  // }
-
   user={
     "email": "wdevon99@gmail.com",
     "password": "123456"
   }
+  // user={
+  //   'email' : null,
+  //   'password' : null
+  // }
 
   //=== === === === === === === === === ===  LOGIN METHOD == === === === === === === === === === ===
   onLogin(){
@@ -45,22 +44,22 @@ export class LoginPage {
       //subscribe to the observable returned to send a post request to login a user
       this.userService.loginUser(this.user).subscribe(
         (response)=>{
-          
           //getting the body of the response
           let body= JSON.parse(response._body);
-          //getting the login status
+          //getting the login status from the response body
           let loginStatus = body.auth;
-
+          //getting the JWT token from the response body
           let token=body.token;
-          
-          DeviceService.jwtToken=token;
-
+          //initializing the JWT Token - This token is used to securly autenticate with the rest api
+          DeviceService.setJwtToken(token);
+          //for debugging
           console.log(token);
 
           //checking the staus to check if the user credentials are valid
           if(loginStatus){
             //changing the page to the home page
             this.goToHomePage();
+            //alerting the user welcome message
             alert(body.message);    
 
           }
@@ -79,12 +78,14 @@ export class LoginPage {
   }
 
   //== === === === === === === === === === === == === === === === === === === === === === == === ===
+  onForgetPassword(){
+    alert("This service is unavailable in the moment");
+  }
+  //== === === === === === === === === === === == === === === === === === === === === === == === ===
 
   saveJwtToken(){
 
   }
-
-  
 
   //=== === === === === === === === === PAGE NAVIGATION === === === === === === === === === === ===
 

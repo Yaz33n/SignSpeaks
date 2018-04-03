@@ -1,13 +1,13 @@
 webpackJsonp([3],{
 
-/***/ 106:
+/***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_user_service__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_user_service__ = __webpack_require__(85);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_login__ = __webpack_require__(53);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -84,7 +84,7 @@ RegisterPage = __decorate([
 
 /***/ }),
 
-/***/ 117:
+/***/ 118:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -97,11 +97,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 117;
+webpackEmptyAsyncContext.id = 118;
 
 /***/ }),
 
-/***/ 158:
+/***/ 159:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -129,48 +129,8 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 158;
+webpackAsyncContext.id = 159;
 module.exports = webpackAsyncContext;
-
-/***/ }),
-
-/***/ 162:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DeviceService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(83);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-let DeviceService = DeviceService_1 = class DeviceService {
-    constructor(http) {
-        this.http = http;
-    }
-    //this method will return a observable which can be used to register a user via a post request
-    sendData(data) {
-        console.log("LALALALALALAL");
-        console.log(DeviceService_1.jwtToken);
-        const headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({});
-        return this.http.post('https://sign-speaks.herokuapp.com/api/gtt', data, { headers: headers });
-    }
-};
-DeviceService = DeviceService_1 = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
-], DeviceService);
-
-var DeviceService_1, _a;
-//# sourceMappingURL=device.service.js.map
 
 /***/ }),
 
@@ -200,15 +160,15 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_status_bar__ = __webpack_require__(202);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_splash_screen__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_register_register__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_register_register__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_login_login__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_convertor_convertor__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_bluetooth_serial__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_text_to_speech__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_speech_recognition__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_user_service__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_device_service__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_http__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_text_to_speech__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_speech_recognition__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_user_service__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_device_service__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_http__ = __webpack_require__(84);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -561,9 +521,9 @@ HomePage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(47);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_bluetooth_serial__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_text_to_speech__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_speech_recognition__ = __webpack_require__(161);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_device_service__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_text_to_speech__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_speech_recognition__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_device_service__ = __webpack_require__(83);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -596,7 +556,6 @@ let ConvertorPage = class ConvertorPage {
         this.bluetoothSerial = bluetoothSerial;
         this.textToSpeech = textToSpeech;
         this.speechRecognition = speechRecognition;
-        // dataString = "blank";
         //this variable will save true of flase based on the sound on off toggle
         this.isSoundOn = true;
         //this variable will store the connection status - If Connected to device or not
@@ -605,25 +564,39 @@ let ConvertorPage = class ConvertorPage {
         this.isSubscribedToBluetooth = false;
         //this variable will store the message from the bluetotth serial 
         this.msgFromGlove = "Message from glove";
-        //=== === === === === ===  REST API CALLS === === === === === ==== === === ==== === === ===
-        this.value = {
-            "message": "111:111:111:111"
-        };
         //Getting the data passed from the previous page
         this.bluetoothSerial = navParams.get('bluetoothSerialObj');
         this.connectionStatus = navParams.get('connectionStatus');
-        //ERRORRRR DUE TO THIS in browser !!! But it works in real device
+        //ERROR DUE TO THIS in the browser !!! But it works in real device
         //this.subscribeDataFromBluetooth(); 
     }
-    onDataRecieved() {
-        this.deviceService.sendData(this.value).subscribe((response) => {
+    //=== === === === === ===  REST API CALLS === === === === === ==== === === ==== === === ===
+    /**
+     * This method will make a Rest api call to get the correct word for the bluetoothPacket sent via a post request
+     * @param bluetoothPacket : A JSON object containg the data recieved from the glove via bluetooth
+     */
+    onDataRecieved(bluetoothPacket) {
+        this.deviceService.sendData(bluetoothPacket).subscribe((response) => {
             console.log(response);
+            let body = JSON.parse(response._body);
+            let message = body.word;
+            console.log("MESSAGE=>");
+            console.log(message);
+            if (!message) {
+                alert(body.error);
+            }
+            else {
+                alert(message);
+            }
+            this.msgFromGlove = message;
         }, (error) => {
             console.log(error);
         });
     }
     //=== === === === === ===  TEXT TO SPEECH AND SPEECH TO TEXT METODS === === === === === ===
-    //this method will convert TEXT to SPEECH and play 
+    /**
+     * this method will convert TEXT to SPEECH and play it if no exceptions are thrown
+    */
     sayText() {
         return __awaiter(this, void 0, void 0, function* () {
             try {
@@ -711,13 +684,13 @@ let ConvertorPage = class ConvertorPage {
         //This function will bind the bluethooth data to the text area
         function invoke(ins, dataObservable) {
             dataObservable.subscribe((res) => {
-                ins.msgFromGlove = res;
-                alert(`Data is : ${ins.msgFromGlove}`);
-                // //checking if sound is on
-                // if(this.isSoundOn){
-                //   //calling sat text method to output the speech
-                //   this.sayText();
-                // }
+                let dataPacket = res;
+                ins.onDataRecieved({ "message": dataPacket });
+                //checking if sound is on
+                if (ins.isSoundOn) {
+                    //calling sat text method to output the speech
+                    ins.sayText();
+                }
             }).catch(e => {
                 console.log("SUBSCRIBE ERROR =========> " + e);
                 this.isSubscribedToBluetooth = false;
@@ -745,6 +718,7 @@ let ConvertorPage = class ConvertorPage {
         function invoke(ins, dataPromise) {
             dataPromise.then((res) => {
                 ins.msgFromGlove = res;
+                //for testing
                 alert(`Data is -> ${ins.msgFromGlove}`);
             }).catch(e => {
                 console.log(e);
@@ -756,12 +730,11 @@ let ConvertorPage = class ConvertorPage {
 };
 ConvertorPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-convertor',template:/*ion-inline-start:"/Users/devon/Desktop/SignSpeaks/Application/src/pages/convertor/convertor.html"*/'<ion-header>\n  <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n    <ion-title>convertor</ion-title>\n  </ion-navbar>\n</ion-header> \n\n<ion-content text-center>\n    <div class="gloveImgContainer">\n        <!-- <img  src="assets/imgs/convertPageImg.png" class="gloveImg"> -->\n        <p >Make a sign to convert to text/speech</p>\n    </div>\n    <p > \n        Device Status :\n        <b [hidden]=\'!connectionStatus\' class="greenClass"> CONNECTED</b> \n        <b [hidden]=\'connectionStatus\' class="redClass"> DISCONNECTED</b> \n    </p>\n\n    <!-- this div section will appear if the device is NOT connected to the glove -->\n    <div [hidden]=\'connectionStatus\'>\n    <!-- <div [hidden]=\'true\'> -->\n        <ion-card>      \n           <ion-card-content>  \n            You can not use the <b>sign to text or speech </b>convertor \n            when device is not connected!\n            <hr>\n            <button ion-button icon-left color=\'danger\' (click)=\'goToDeviceInfoPage()\'>\n                <ion-icon name="arrow-back"></ion-icon>\n                Go back to Device Info \n            </button>\n            </ion-card-content>                \n        </ion-card> \n    \n    </div>\n\n    <!-- this div section  will appear only if the decive is connected to the glove -->\n    <div>\n        <div [hidden]=\'!connectionStatus\'>\n        <!-- <div [hidden]=\'false\'> -->\n            <ion-card>  \n\n                <button *ngIf=\'!isSubscribedToBluetooth\' ion-button color="" (click)=\'subscribeDataFromBluetooth()\'>Start Session</button>  \n                <button *ngIf=\'isSubscribedToBluetooth\' ion-button color="danger" (click)=\'endSubscriptionFromBluetooth()\'>End Session</button>        \n                    \n                <ion-card-header>\n                You:\n                <hr>\n                <ion-item>\n                        <ion-label>Enable speech output</ion-label>\n                        <ion-toggle [(ngModel)]="isSoundOn"></ion-toggle>\n                </ion-item>\n                <hr>\n                </ion-card-header>      \n                <ion-card-content>  \n                \n                    <ion-textarea [(ngModel)]="msgFromGlove" class="textAreaMsgFromGlove" disabled=\'false\'></ion-textarea>\n\n                    <button ion-button color="secondary" (click)=\'readDataFromBluetooth()\'>Get Data test</button>\n                    \n                 \n                </ion-card-content>                \n            </ion-card>\n        </div>    \n        <ion-card>      \n            <ion-card-header>\n                Partner:\n                <hr>\n            </ion-card-header>\n            <ion-card-content>  \n                <p>\n                    <ion-textarea [(ngModel)]="convertedSpeechMessage" class="textAreaMsgFromGlove" disabled=\'false\'></ion-textarea>\n                <p>\n                <hr>\n                <div >\n                    <button ion-button outline icon-only  (click)=\'listenForSpeech()\' >\n                        <ion-icon name="mic"></ion-icon>\n                    </button>\n                </div>\n                <p>\n                    <small>Click on the mic to convert speech to text</small>\n                <p>\n            </ion-card-content>           \n        </ion-card>\n    </div>   \n    <button ion-button outline icon-only  (click)=\'onDataRecieved()\' > data recieved</button>\n</ion-content>\n\n\n\n    \n<!-- \n<button ion-button (click)="sendDataToBluetooth()"> Test Send Data </button>\n<button ion-button (click)="readDataToBluetooth()"> Test Read Data </button>\n<p> Normal = {{dataString}}</p> -->\n\n\n\n<!-- <br>\n<button ion-button color="secondary" (click)=\'sayText()\'>Say Text</button>\n<br>\n<button ion-button color="danger" (click)=\'isSpeechSupported()\'> isSpeechSupported</button>\n<br>\n<button ion-button color="danger" (click)=\'getPermission()\'> getPermission</button>\n<br>\n<button ion-button color="danger" (click)=\'hasPermission()\'> hasPermission</button>\n<br>\n<button ion-button color="danger" (click)=\'getSupportedLanguages()\'> getSupportedLanguages </button>\n<br>\n<button ion-button color="danger" (click)=\'listenForSpeech()\'> listen For Speech</button> -->'/*ion-inline-end:"/Users/devon/Desktop/SignSpeaks/Application/src/pages/convertor/convertor.html"*/,
+        selector: 'page-convertor',template:/*ion-inline-start:"/Users/devon/Desktop/SignSpeaks/Application/src/pages/convertor/convertor.html"*/'<ion-header>\n  <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n    <ion-title>convertor</ion-title>\n  </ion-navbar>\n</ion-header> \n\n<ion-content text-center>\n    <div class="gloveImgContainer">\n        <!-- <img  src="assets/imgs/convertPageImg.png" class="gloveImg"> -->\n        <p >Make a sign to convert to text/speech</p>\n    </div>\n    <p > \n        Device Status :\n        <b [hidden]=\'!connectionStatus\' class="greenClass"> CONNECTED</b> \n        <b [hidden]=\'connectionStatus\' class="redClass"> DISCONNECTED</b> \n    </p>\n\n    <!-- this div section will appear if the device is NOT connected to the glove -->\n    <div [hidden]=\'connectionStatus\'>\n    <!-- <div [hidden]=\'true\'> -->\n        <ion-card>      \n           <ion-card-content>  \n            You can not use the <b>sign to text or speech </b>convertor \n            when device is not connected!\n            <hr>\n            <button ion-button icon-left color=\'danger\' (click)=\'goToDeviceInfoPage()\'>\n                <ion-icon name="arrow-back"></ion-icon>\n                Go back to Device Info \n            </button>\n            </ion-card-content>                \n        </ion-card> \n    \n    </div>\n\n    <!-- this div section  will appear only if the decive is connected to the glove -->\n    <div>\n        <div [hidden]=\'!connectionStatus\'>\n        <!-- <div [hidden]=\'false\'> -->\n            <ion-card>  \n\n                <button *ngIf=\'!isSubscribedToBluetooth\' ion-button color="" (click)=\'subscribeDataFromBluetooth()\'>Start Session</button>  \n                <button *ngIf=\'isSubscribedToBluetooth\' ion-button color="danger" (click)=\'endSubscriptionFromBluetooth()\'>End Session</button>        \n                    \n                <ion-card-header>\n                You:\n                <hr>\n                <ion-item>\n                        <ion-label>Enable speech output</ion-label>\n                        <ion-toggle [(ngModel)]="isSoundOn"></ion-toggle>\n                </ion-item>\n                <hr>\n                </ion-card-header>      \n                <ion-card-content>  \n                \n                    <ion-textarea [(ngModel)]="msgFromGlove" class="textAreaMsgFromGlove" disabled=\'false\'></ion-textarea>\n\n                    <button ion-button color="secondary" (click)=\'readDataFromBluetooth()\'>Get Data test</button>\n                    \n                 \n                </ion-card-content>                \n            </ion-card>\n        </div>    \n        <ion-card>      \n            <ion-card-header>\n                Partner:\n                <hr>\n            </ion-card-header>\n            <ion-card-content>  \n                <p>\n                    <ion-textarea [(ngModel)]="convertedSpeechMessage" class="textAreaMsgFromGlove" disabled=\'false\'></ion-textarea>\n                <p>\n                <hr>\n                <div >\n                    <button ion-button outline icon-only  (click)=\'listenForSpeech()\' >\n                        <ion-icon name="mic"></ion-icon>\n                    </button>\n                </div>\n                <p>\n                    <small>Click on the mic to convert speech to text</small>\n                <p>\n            </ion-card-content>           \n        </ion-card>\n    </div>   \n    <button ion-button outline icon-only  (click)=\'onDataRecieved()\' > data recieved</button>\n    <button ion-button outline icon-only  (click)=\'sayText()\' >play</button>\n</ion-content>\n\n\n\n    \n<!-- \n<button ion-button (click)="sendDataToBluetooth()"> Test Send Data </button>\n<button ion-button (click)="readDataToBluetooth()"> Test Read Data </button>\n<p> Normal = {{dataString}}</p> -->\n\n\n\n<!-- <br>\n<button ion-button color="secondary" (click)=\'sayText()\'>Say Text</button>\n<br>\n<button ion-button color="danger" (click)=\'isSpeechSupported()\'> isSpeechSupported</button>\n<br>\n<button ion-button color="danger" (click)=\'getPermission()\'> getPermission</button>\n<br>\n<button ion-button color="danger" (click)=\'hasPermission()\'> hasPermission</button>\n<br>\n<button ion-button color="danger" (click)=\'getSupportedLanguages()\'> getSupportedLanguages </button>\n<br>\n<button ion-button color="danger" (click)=\'listenForSpeech()\'> listen For Speech</button> -->'/*ion-inline-end:"/Users/devon/Desktop/SignSpeaks/Application/src/pages/convertor/convertor.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_6__services_device_service__["a" /* DeviceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__services_device_service__["a" /* DeviceService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_bluetooth_serial__["a" /* BluetoothSerial */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_bluetooth_serial__["a" /* BluetoothSerial */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_text_to_speech__["a" /* TextToSpeech */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_text_to_speech__["a" /* TextToSpeech */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5__ionic_native_speech_recognition__["a" /* SpeechRecognition */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ionic_native_speech_recognition__["a" /* SpeechRecognition */]) === "function" && _f || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_6__services_device_service__["a" /* DeviceService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_bluetooth_serial__["a" /* BluetoothSerial */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_text_to_speech__["a" /* TextToSpeech */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_speech_recognition__["a" /* SpeechRecognition */]])
 ], ConvertorPage);
 
-var _a, _b, _c, _d, _e, _f;
 //# sourceMappingURL=convertor.js.map
 
 /***/ }),
@@ -773,10 +746,10 @@ var _a, _b, _c, _d, _e, _f;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_register__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register_register__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_user_service__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_device_service__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_user_service__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_device_service__ = __webpack_require__(83);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -803,18 +776,18 @@ let LoginPage = class LoginPage {
         //this variable will store the login button pressed status
         this.isLoginPressed = false;
         //This is the user JSON object that will be passed to the onLogin Method
-        // user={
-        //   'email' : null,
-        //   'password' : null
-        // }
         this.user = {
             "email": "wdevon99@gmail.com",
             "password": "123456"
         };
         //this will diabale the side menu in the login screen
-        this.menu.enable(true);
+        this.menu.enable(false);
         this.isLoginPressed = false;
     }
+    // user={
+    //   'email' : null,
+    //   'password' : null
+    // }
     //=== === === === === === === === === ===  LOGIN METHOD == === === === === === === === === === ===
     onLogin() {
         console.log("Login Pressed");
@@ -829,15 +802,19 @@ let LoginPage = class LoginPage {
             this.userService.loginUser(this.user).subscribe((response) => {
                 //getting the body of the response
                 let body = JSON.parse(response._body);
-                //getting the login status
+                //getting the login status from the response body
                 let loginStatus = body.auth;
+                //getting the JWT token from the response body
                 let token = body.token;
-                __WEBPACK_IMPORTED_MODULE_5__services_device_service__["a" /* DeviceService */].jwtToken = token;
+                //initializing the JWT Token - This token is used to securly autenticate with the rest api
+                __WEBPACK_IMPORTED_MODULE_5__services_device_service__["a" /* DeviceService */].setJwtToken(token);
+                //for debugging
                 console.log(token);
                 //checking the staus to check if the user credentials are valid
                 if (loginStatus) {
                     //changing the page to the home page
                     this.goToHomePage();
+                    //alerting the user welcome message
                     alert(body.message);
                 }
             }, (error) => {
@@ -848,6 +825,10 @@ let LoginPage = class LoginPage {
                 console.log(error);
             });
         }
+    }
+    //== === === === === === === === === === === == === === === === === === === === === === == === ===
+    onForgetPassword() {
+        alert("This service is unavailable in the moment");
     }
     //== === === === === === === === === === === == === === === === === === === === === === == === ===
     saveJwtToken() {
@@ -864,23 +845,81 @@ let LoginPage = class LoginPage {
 };
 LoginPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"/Users/devon/Desktop/SignSpeaks/Application/src/pages/login/login.html"*/'<ion-content  padding class="background">\n  <div>\n      <div text-center class="logoWhiteContainer">\n         <img  src="assets/imgs/whitelogo.png">\n      </div>\n    <ion-list text-center>\n        <ion-item class="ionItemLogin">\n          <ion-input type="text" placeholder="Email" [(ngModel)]="user.email" required></ion-input>\n        </ion-item>\n        <ion-item class="ionItemLogin">\n          <ion-input type="password" placeholder="Password" [(ngModel)]="user.password"  required></ion-input>\n        </ion-item>\n    </ion-list> \n    <div text-center>\n      <button ion-button icon-left color="blueDark"  (click)=\'onLogin()\'>\n        <ion-icon name="key"></ion-icon>Login     \n      </button>\n      <br>\n      <br>\n      <a href="#" color="light"> Forgot password?</a>\n      <br>\n      <br>\n      <ion-spinner name="crescent" *ngIf="isLoginPressed"></ion-spinner>\n      \n    </div>\n  </div>\n</ion-content>\n<ion-footer class="footer">\n  <div text-center>\n    <a color="light" (click)=\'goToRegisterPage()\'>New to Sign Speaks? <b>Create an account</b></a>\n  </div>\n</ion-footer>\n'/*ion-inline-end:"/Users/devon/Desktop/SignSpeaks/Application/src/pages/login/login.html"*/,
+        selector: 'page-login',template:/*ion-inline-start:"/Users/devon/Desktop/SignSpeaks/Application/src/pages/login/login.html"*/'<ion-content  padding class="background">\n  <div>\n      <div text-center class="logoWhiteContainer">\n        <!-- \n        alt text is set to the images for improved HCL \n        (Accessablity will be improved for the blind since alt text can be used in screen reader)\n         -->\n        <img  src="assets/imgs/whitelogo.png" alt="Signspeaks Logo">\n      </div>\n    <ion-list text-center>\n        <ion-item class="ionItemLogin">\n          <ion-input type="text" placeholder="Email" [(ngModel)]="user.email" required></ion-input>\n        </ion-item>\n        <ion-item class="ionItemLogin">\n          <ion-input type="password" placeholder="Password" [(ngModel)]="user.password"  required></ion-input>\n        </ion-item>\n    </ion-list> \n    <div text-center>\n      <button ion-button icon-left color="blueDark"  (click)=\'onLogin()\'>\n        <ion-icon name="key"></ion-icon>Login     \n      </button>\n      <br>\n      <br>\n      <!-- a forget password field is used to make the user experice of the user better in case he losses his password -->\n      <a href="#" color="light" (click)="onForgetPassword()"> Forgot password?</a>\n      <br>\n      <br>\n      <!-- to improve the user experice (UX) / HCL ,a spinner is used to indicate the login process is goin on when login button is pressed -->\n      <ion-spinner name="crescent" *ngIf="isLoginPressed"></ion-spinner>\n      \n    </div>\n  </div>\n</ion-content>\n<ion-footer class="footer">\n  <div text-center>\n    <a color="light" (click)=\'goToRegisterPage()\'>New to Sign Speaks? <b>Create an account</b></a>\n  </div>\n</ion-footer>\n'/*ion-inline-end:"/Users/devon/Desktop/SignSpeaks/Application/src/pages/login/login.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__services_user_service__["a" /* UserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__services_user_service__["a" /* UserService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__services_device_service__["a" /* DeviceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__services_device_service__["a" /* DeviceService */]) === "function" && _e || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* MenuController */], __WEBPACK_IMPORTED_MODULE_4__services_user_service__["a" /* UserService */], __WEBPACK_IMPORTED_MODULE_5__services_device_service__["a" /* DeviceService */]])
 ], LoginPage);
 
-var _a, _b, _c, _d, _e;
 //# sourceMappingURL=login.js.map
 
 /***/ }),
 
-/***/ 84:
+/***/ 83:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DeviceService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(84);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+let DeviceService = DeviceService_1 = class DeviceService {
+    constructor(http) {
+        this.http = http;
+    }
+    //======== ======== ======== ========
+    /**
+     * this method will return a observable which can be used to register a user via a post request
+     * @param data : a JSON object contsining the message/data packet recieved from the glove via bluethooth
+     */
+    sendData(data) {
+        //for debugging perposes
+        console.log("TOKEN");
+        console.log(DeviceService_1.jwtToken);
+        //For SECURE communication with rest api private routes , the JWT token must be passed in the headers when making a request to the server
+        //making a new header object with the  JWT token
+        const headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({
+            //setting the jwt token as the token recieved from the server when the user logs in
+            "x-auth": DeviceService_1.jwtToken
+        });
+        //returning a subcribable observable 
+        return this.http.post('https://sign-speaks.herokuapp.com/api/gtt', data, { headers: headers });
+    }
+    //======== ======== ======== ========
+    //getters and setters to securly set and acces the jwt token
+    static setJwtToken(jwtToken) {
+        DeviceService_1.jwtToken = jwtToken;
+    }
+    static getJwtToken() {
+        return DeviceService_1.jwtToken;
+    }
+};
+DeviceService = DeviceService_1 = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
+], DeviceService);
+
+var DeviceService_1;
+//# sourceMappingURL=device.service.js.map
+
+/***/ }),
+
+/***/ 85:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(84);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -896,21 +935,28 @@ let UserService = class UserService {
     constructor(http) {
         this.http = http;
     }
-    //this method will return a observable which can be used to register a user via a post request
+    //======== ======== ======== ========
+    /**
+     * this method will return a observable which can be used to register a user via a post request
+     * @param user : A user JSON object with username , email , password and phone number
+    */
     registerUser(user) {
         return this.http.post('https://sign-speaks.herokuapp.com/users', user);
     }
-    //this method will return a observable that can be used to login a user
+    //======== ======== ======== ========
+    /**
+     * this method will return a observable that can be used to login a user
+     * @param user : A user JSON object with email and password
+    */
     loginUser(user) {
         return this.http.post('https://sign-speaks.herokuapp.com/users/login', user);
     }
 };
 UserService = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
 ], UserService);
 
-var _a;
 //# sourceMappingURL=user.service.js.map
 
 /***/ })
