@@ -1,3 +1,5 @@
+
+
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { UserService } from '../../services/user.service';
@@ -19,6 +21,7 @@ export class RegisterPage {
   //   "phoneNumber": null
   // }
 
+  //Creating user object model
   user= {
     "name":"null",
     "email": "null@gamil.com",
@@ -34,13 +37,15 @@ export class RegisterPage {
 
 
    onSave(){
-     
+     //checking whether all the text fields are filled.
     if(this.user.name ==null || this.user.email ==null || this.user.password ==null || this.user.cpassword ==null || this.user.phoneNumber ==null){
       alert("All fields must be filled!");   
     }else{
+      //checking both entered passwords are equal or not
       if(this.user.password!=this.user.cpassword){
         alert("Password Mismatch");
       }else{
+        //if equal successful alert will be displyed.
         alert("Sucessfully Registered :)"); 
         //subscribing to the observable retured to send a post request  
         this.userService.registerUser(this.user).subscribe(
