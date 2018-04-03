@@ -1,0 +1,5 @@
+{
+    "MONGODB_URI": "mongodb://heroku_hwnb4qtq:plitn0fasnm6qhe74t5d543fn9@ds163301.mlab.com:63301/heroku_hwnb4qtq",
+    "JWT_SECRET": "0x0100_YT.AS.DW.KK",
+    "LOCAL_PORT": 3000
+}
