@@ -275,7 +275,7 @@ app.post('/users/me', authenticate, (req, res) => {
  * }
  * 
  * @param {String}    #1 Endpoint URI
- * @param {String}    #2 Custom Authentication Middleware.
+ * @param {Function}  #2 Custom Authentication Middleware.
  * @param {Function}  #3 Callback function for the Request and the Response object.
  */
 app.post('/api/gtt', authenticate, (req, res) => {
