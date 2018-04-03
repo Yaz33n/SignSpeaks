@@ -13,7 +13,8 @@ import { BluetoothSerial } from '@ionic-native/bluetooth-serial';
 import { TextToSpeech } from '@ionic-native/text-to-speech';
 import { SpeechRecognition } from '@ionic-native/speech-recognition';
 
-import { UserService } from './user.service';
+import { UserService } from '../services/user.service';
+import { DeviceService } from '../services/device.service';
 import { HttpModule } from '@angular/http';
 
 
@@ -45,6 +46,7 @@ import { HttpModule } from '@angular/http';
     TextToSpeech,
     SpeechRecognition,
     UserService,
+    DeviceService,
     {provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })

@@ -7,19 +7,19 @@
     </div>
     <ion-list text-center>
         <ion-item class="ionItemLogin">
-          <ion-input type="text" placeholder="Username" [(ngModel)]="user.name"></ion-input>
+          <ion-input type="text" placeholder="Username" [(ngModel)]="user.name" required></ion-input>
         </ion-item>
         <ion-item class="ionItemLogin">
-          <ion-input type="text" placeholder="Email" [(ngModel)]="user.email"></ion-input>
+          <ion-input type="text" placeholder="Email" [(ngModel)]="user.email" required></ion-input>
         </ion-item>
         <ion-item class="ionItemLogin">
-          <ion-input type="password" placeholder="Password" [(ngModel)]="user.password"></ion-input>
+          <ion-input type="password" placeholder="Password" [(ngModel)]="user.password" [minlength]="6" required></ion-input>
         </ion-item>
         <ion-item class="ionItemLogin">
-            <ion-input type="password" placeholder="Confirm Password" [(ngModel)]="user.cpassword"></ion-input>
+            <ion-input type="password" placeholder="Confirm Password" [(ngModel)]="user.cpassword" [minlength]="6" required></ion-input>
         </ion-item>
         <ion-item class="ionItemLogin">
-          <ion-input type="number" placeholder="Mobile Number" [(ngModel)]="user.phoneNumber"></ion-input>
+          <ion-input type="number" placeholder="Mobile Number" [(ngModel)]="user.phoneNumber" [minlength]="10" required></ion-input>
       </ion-item>
       
     </ion-list>

@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { UserService } from '../../app/user.service';
+import { UserService } from '../../services/user.service';
 import { LoginPage } from '../login/login';
-
-
 
 @IonicPage()
 @Component({
