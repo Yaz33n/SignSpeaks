@@ -6,13 +6,13 @@
     density="xxhdpi"
     format="10"
     plugin-version="3.0.0"
-    timestamp="1522643368965"
+    timestamp="1522699258674"
     token="-663322890796954963"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1418" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
@@ -24,82 +24,148 @@
         duration="0" />
 
     <artifact
+        location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
+    <artifact
         location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
         type="SPLIT" />
     <artifact
         location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-        type="SPLIT" />
-    <artifact
         location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
         type="SPLIT" />
     <artifact
         location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
         type="SPLIT" />
     <artifact
+        location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
         location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
-        type="SPLIT_MAIN" />
+        location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1522643368965"
+        timestamp="1522699258674"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
+            location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/devon/Desktop/SignSpeaks/Application/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+        <artifact
             location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
             location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
+            location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/outputs/apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
+            location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/devon/Desktop/SingspeakFinalIonicApp/platforms/android/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
     </build>
 
 </instant-run>
