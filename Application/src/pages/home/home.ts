@@ -23,7 +23,6 @@ export class HomePage {
   //=== === === === === === === === === === === === === === === === === === === === === === === ===
   
   constructor(public navCtrl: NavController,private alertCtrl: AlertController,private bluetoothSerial: BluetoothSerial) {
-
     //enabling the blutooth serial for communication
     bluetoothSerial.enable();
   }

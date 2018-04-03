@@ -18,7 +18,7 @@ export class LoginPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,public menu: MenuController,public userService:UserService,public deviceService:DeviceService) {
     //this will diabale the side menu in the login screen
-    this.menu.enable(false);
+    this.menu.enable(true);
     this.isLoginPressed=false;
   }
 

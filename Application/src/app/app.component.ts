@@ -6,7 +6,6 @@ import { AlertController } from 'ionic-angular';
 
 
 import { HomePage } from '../pages/home/home';
-import { RegisterPage } from '../pages/register/register';
 import { LoginPage } from '../pages/login/login';
 import { ConvertorPage } from '../pages/convertor/convertor';
 

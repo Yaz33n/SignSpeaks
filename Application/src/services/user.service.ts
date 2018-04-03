@@ -9,7 +9,6 @@ export class UserService{
     }
 
     //======== ======== ======== ========
-    
     /**
      * this method will return a observable which can be used to register a user via a post request
      * @param user : A user JSON object with username , email , password and phone number
@@ -27,6 +26,4 @@ export class UserService{
     loginUser( user : any){
         return this.http.post('https://sign-speaks.herokuapp.com/users/login', user  );  
     }
-
-
 }
