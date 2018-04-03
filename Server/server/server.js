@@ -22,6 +22,45 @@ const { authenticate } = require('./middleware/authenticate');
 const config = require('./config/config.json');
 const { getLetter } = require('./api/gestureToText');
 
+/**
+ * There are two main Security Issues that I need to fix in 
+ * this REST API those are :-
+ * 
+ * 1. This server must run on HTTPS in production for security concerns &
+ *    this server needs a valid credentials for https.
+ *     - certificate
+ *     - Use of CORS (GET/POST)
+ *     - privatekey and CSR
+ *     - need a permanent domain for our app
+ * 
+ * ISSUE STATUS        : DID NOT RESOLVED YET.
+ * ISSUE UPHOLDED BY   : Mohomad Yazeen Thariq
+ * --------------------------------------------------------------------
+ * 
+ * 2. Generate Authentication system before consuming the
+ *    REST API.
+ *      - Add JSON Web tokens
+ *      - Provide users accessible tokens
+ *      - Save user tokens
+ * 
+ * ISSUE STATUS        : RESOLVED
+ * ISSUE RESOLVED BY   : Mohomad Yazeen Thariq
+ * RESOLVING MECHANISM : Used open JWT library for create tokens
+ *                       and used the token to authenticate to the
+ *                       API via creating a middleware.
+ * --------------------------------------------------------------------
+ * 
+ * 3. Encrypt the password before saving the user
+ *    document.
+ *      - use SHA256 Algorithm to hash the password
+ *      - Use a auto generated hash for each password
+ * 
+ * ISSUE STATUS        : RESOLVED
+ * ISSUE RESOLVED BY   : Mohomad Yazeen Thariq
+ * RESOLVING MECHANISM : Used open bcryptjs library for hashing the 
+ *                       password. (with auto salting)
+ */
+
 const app = express(); // Init the express app
 app.use(bodyParser.json()); // Using the body parser middleware.
 app.use(cors()); // Resolving cors Access issues for the server.

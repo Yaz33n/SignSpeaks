@@ -133,10 +133,11 @@ UserSchema.methods.generateAuthToken = function () {
         { _id: user._id.toHexString(), access: _access },
         config.JWT_SECRET).toString();
 
+    // Pushing the user generated tokens for user object in the model
     user.tokens.push({ access: _access, token });
 
     return user.save().then(() => {
-        return token;
+        return token; // keep alive promise chain
     });
 };
 
