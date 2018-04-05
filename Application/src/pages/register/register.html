@@ -6,6 +6,9 @@
         <!-- Creating text fields to get the user inputs for registration.-->
           <img  src="assets/imgs/whitelogo.png" alt="logo">
     </div>
+    <!-- Creating text fields to get the user inputs for registration.-->
+ <!-- Set the location of text fields to the center of the page-->
+ <!-- Used ‘required’ syntax to prevent user from not filling text fields -->
     <ion-list text-center>
         <ion-item class="ionItemLogin">
           <ion-input type="text" placeholder="Username" [(ngModel)]="user.name" required></ion-input>
@@ -17,6 +20,7 @@
           <ion-input type="password" placeholder="Password" [(ngModel)]="user.password" [minlength]="6" required></ion-input>
         </ion-item>
         <ion-item class="ionItemLogin">
+          <!--minimum of 6 characters should be there for the password fields-->
             <ion-input type="password" placeholder="Confirm Password" [(ngModel)]="user.cpassword" [minlength]="6" required></ion-input>
         </ion-item>
         <ion-item class="ionItemLogin">
@@ -27,7 +31,7 @@
     
   
     <div text-center>
-      <--Onsave method is called when user click on the button-->
+      <!--Onsave method is called when user click on the button-->
       <button ion-button icon-left color="blueLight" (click)="onSave()">
         <ion-icon name="key" > </ion-icon>
         Register
