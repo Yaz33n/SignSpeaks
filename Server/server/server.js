@@ -351,6 +351,10 @@ app.post('/api/gtt', authenticate, (req, res) => {
 
 });
 
+app.get('*', (req, res) => {
+    res.status(404).send('ERROR 404 NOT FOUND')
+});
+
 app.listen(process.env.PORT || config.LOCAL_PORT, () => {
     console.log('Server started');
 }); // Starts the server on production mode
